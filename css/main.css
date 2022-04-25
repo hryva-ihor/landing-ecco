@@ -3628,6 +3628,7 @@ h2 {
     .footer-boots {
         -webkit-transform: scale(-1, 1);
         transform: scale(-1, 1);
+        top: 700px;
     }
 }
 
@@ -3818,7 +3819,7 @@ h2 {
         max-width: 250px;
     }
     .footer-boots {
-        top: 740px;
+        top: 780px;
         width: 90vw;
         left: -200px;
         right: -10px;
@@ -3831,7 +3832,7 @@ h2 {
         top: 305px;
     }
     .footer .promotion-date {
-        top: 360px;
+        top: 350px;
         left: 40px;
     }
     .footer .sale-value {
@@ -3840,7 +3841,6 @@ h2 {
     }
     .footer .order-link {
         position: relative;
-        margin-top: 120vw;
         z-index: 40;
     }
     .footer:before {
@@ -3862,18 +3862,13 @@ h2 {
         left: 170px;
     }
     .footer .order-link {
-        margin-top: 127vw;
+        margin-top: 550px;
     }
     .footer-copy span {
         display: block;
     }
 }
 
-@media (max-width: 413px) {
-    .footer .order-link {
-        margin-top: 135vw;
-    }
-}
 
 @media (min-width: 1200px) {
     .header-back .img-1.js-anim-scroll {
