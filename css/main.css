@@ -569,6 +569,7 @@ li {
 
 .sale-box {
     position: relative;
+    z-index: 10;
 }
 
 .sale-value {
@@ -692,7 +693,7 @@ li {
 
 .header .promotion-date {
     position: relative;
-    top: 20px;
+    top: 120px;
 }
 
 .order-box {
@@ -854,10 +855,10 @@ li {
         object-fit: cover;
         margin-left: 30px;
     }
-    /* .header .spray-box,
     .header .promotion-date {
-        top: -110px;
-    } */
+        top: 300px;
+    }
+
 }
 
 @media (max-width: 1366px) {
@@ -883,6 +884,7 @@ li {
     }
     .header .promotion-date {
         left: -150px;
+        top: 240px;
     }
     .header .container {
         max-width: 1366px;
@@ -914,9 +916,11 @@ li {
     .header-images img {
         /* height: 330px; */
     }
-    .spray-box,
-    .header .promotion-date {
+    .spray-box {
         top: 0;
+    }
+    .header .promotion-date {
+        top: 300px;
     }
     .header:before {
         top: 580px;
@@ -930,7 +934,7 @@ li {
         width: 280px;
     }
     .header .price-box {
-        top: 100px;
+        top: 200px;
         right: -220px;
     }
     .header-back .img-2 {
@@ -948,6 +952,9 @@ li {
 }
 
 @media (max-width: 991px) {
+    .header .promotion-date {
+        top: 0;
+    }
     .container {
         max-width: 768px;
     }
@@ -1103,7 +1110,8 @@ li {
         width: calc(100% + 30px);
     }
     .header-images img {
-        height: 59vw;
+        max-height: 700px;
+        object-fit: contain;
     }
     .logo {
         width: 120px;
@@ -3357,10 +3365,11 @@ h2 {
     background-image: url("../images/footer-left.png");
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 20;
+    z-index: 0;
 }
 
 .footer-content {
+    z-index: 1;
     position: relative;
     width: 860px;
     padding-left: 180px;
@@ -3401,20 +3410,25 @@ h2 {
 
 .footer-boots {
     top: 90px;
-    left: -1200px;
+    left: -1000px;
+    transform: translate(0,50%);
+    z-index: 0 !important;
 }
 
 .footer .promotion-date {
     position: absolute;
-    top: -40px;
-    left: 70px;
+    top: -100px;
+    left: -50px;
     width: 280px;
 }
 
 .footer-photo {
+    /* width: 100%;
+    height: 100%;
+    object-fit: contain; */
     top: 251px;
     left: 462px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2); */
 }
 
 .footer .spray-box {
@@ -3461,8 +3475,8 @@ h2 {
         padding-bottom: 30px;
     }
     .footer-boots {
-        top: 190px;
-        left: -1010px;
+        top: 300px;
+        left: -800px;
         width: 800px;
     }
     .footer:before {
@@ -3520,7 +3534,7 @@ h2 {
         top: 270px;
     }
     .footer-boots {
-        left: -920px;
+        left: -620px;
         width: 710px;
     }
     .footer .sale-box {
@@ -3534,7 +3548,7 @@ h2 {
         top: -80px;
     }
     .footer .promotion-date {
-        left: 5px;
+        left: -20px;
     }
     .footer-photo {
         left: 21vw;
@@ -3649,8 +3663,8 @@ h2 {
         left: 0px;
     }
     .footer-boots {
-        top: 480px;
-        left: -420px;
+        top: 780px;
+        left: -320px;
     }
     .footer .sale-box {
         right: 320px;
@@ -3682,7 +3696,7 @@ h2 {
         margin: 20px 0;
     }
     .footer-boots {
-        left: -370px;
+        left: -270px;
     }
     .footer-photo {
         width: 300px;
@@ -3761,7 +3775,8 @@ h2 {
         left: 209px;
     }
     .footer-boots {
-        top: 440px;
+        top: 740px;
+        left: -300px;
         width: 430px;
     }
     .footer .order-link {
@@ -3796,13 +3811,16 @@ h2 {
 }
 
 @media (max-width: 480px) {
+    .footer-copy{
+        min-height: 200px;
+    }
     .footer_headline .headline {
         max-width: 250px;
     }
     .footer-boots {
-        top: 440px;
+        top: 740px;
         width: 90vw;
-        left: auto;
+        left: -200px;
         right: -10px;
     }
     .footer-photo {
@@ -3813,8 +3831,8 @@ h2 {
         top: 305px;
     }
     .footer .promotion-date {
-        top: -107px;
-        left: 59px;
+        top: 360px;
+        left: 40px;
     }
     .footer .sale-value {
         left: -7px;
@@ -4001,7 +4019,9 @@ h2 {
     -webkit-transform: translateX(-300px);
     transform: translateX(-300px);
 }
-
+.reviews:after {
+    z-index: 10 !important;
+}
 @media (min-width: 1930px) {
     .header:before {
         left: -120px;
@@ -4032,6 +4052,7 @@ h2 {
     .reviews:after {
         right: -170px;
         left: auto;
+        z-index: 0;
     }
     .about .slump-leaf {
         left: -60px;
@@ -4054,4 +4075,7 @@ label.error {
 .icon img{
     width: 100%;
     border-radius: 50%;
+}
+.footer-copy{
+    min-height: 500px;
 }
