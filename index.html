@@ -117,12 +117,20 @@
                 <img class="d-4 js-parallax-8" src="images/danger.png" alt="">
             </div>
         </section> -->
-        <p><a name="4"></a></p>
         <section class="overview">
+            <div class="overview-gallery js-anim-section" data-speed="150">
+                <a class="js-anim-scroll" href="img/sneakers/1.jpg"><img src="img/sneakers/1.jpg" alt=""></a>
+                <a class="js-anim-scroll" href="img/sneakers/2.jpg"><img src="img/sneakers/2.jpg" alt=""></a>
+                <a class="js-anim-scroll" href="img/sneakers/3.jpg"><img src="img/sneakers/3.jpg" alt=""></a>
+                <a class="js-anim-scroll" href="img/sneakers/4.jpg"><img src="img/sneakers/4.jpg" alt=""></a>
+                <a class="js-anim-scroll" href="img/sneakers/5.jpg"><img src="img/sneakers/5.jpg" alt=""></a>
+                <a class="js-anim-scroll" href="img/sneakers/6.jpg"><img src="img/sneakers/6.jpg" alt=""></a>
+            </div>
+            <p><a name="5"></a></p>
             <div class="container">
                 <h2>
                     <!-- <span>Keduki Grande Ladies:</span> -->
-                    <span>Посмотрите наш видеообзор</span>
+                    <span class="span-relative">Посмотрите наш видеообзор</span>
                 </h2>
                 <div class="overview-video">
                     <div class="overview-video-wrapper">
@@ -139,15 +147,6 @@
                     </div>
                 </div>
             </div>
-            <p><a name="5"></a></p>
-            <div class="overview-gallery js-anim-section" data-speed="150">
-                <a class="js-anim-scroll" href="img/sneakers/1.jpg"><img src="img/sneakers/1.jpg" alt=""></a>
-                <a class="js-anim-scroll" href="img/sneakers/2.jpg"><img src="img/sneakers/2.jpg" alt=""></a>
-                <a class="js-anim-scroll" href="img/sneakers/3.jpg"><img src="img/sneakers/3.jpg" alt=""></a>
-                <a class="js-anim-scroll" href="img/sneakers/4.jpg"><img src="img/sneakers/4.jpg" alt=""></a>
-                <a class="js-anim-scroll" href="img/sneakers/5.jpg"><img src="img/sneakers/5.jpg" alt=""></a>
-                <a class="js-anim-scroll" href="img/sneakers/6.jpg"><img src="img/sneakers/6.jpg" alt=""></a>
-            </div>
             <div class="back overview-back">
                 <img class="over-back-1" src="images/overview-1.png" alt="">
                 <img class="over-back-2 js-parallax-9" src="images/header-icon-1.png" alt="">
@@ -157,17 +156,26 @@
             </div>
         </section>
         <p><a name="6"></a></p>
+        <section class="overview">
+            <div class="overview-gallery js-anim-section boots" data-speed="150">
+                <a class="js-anim-scroll" href="img/boot.png"><img src="img/boot.png" alt=""></a>
+                <a class="js-anim-scroll" href="img/boot2112.png"><img src="img/boot2112.png" alt=""></a>
+                <a class="js-anim-scroll" href="img/sneakersbg.png"><img src="img/sneakersbg.png" alt=""></a>
+            </div>
+        </section>
         <section class="product-cards" id="product-cards">
             <div class="container">
-                <h2><span>ECCO soft 7 весна:</span></h2>
+                <h2><span>ECCO soft 7</span></h2>
                 <div class="product-card product-card-1 check-sale">
                     <div class="product-card-wrapper">
-                        <h3>Женские кеды ессо soft 7</h3>
+                        <h3>Женские кеды <br> ессо soft 7</h3>
                         <div class="product-card__gallery js-anim-section" data-speed="80">
-                            <a class="js-anim-scroll" href="img/boot2112.png"><img src="img/boot2112.png" alt=""></a>
-                            <a class="js-anim-scroll" href="img/bootswqw.png"><img src="img/bootswqw.png" alt=""></a>
-                            <a class="js-anim-scroll" href="img/sneakersbg.png"><img src="img/sneakersbg.png" alt=""></a>
-                            <a class="js-anim-scroll" href="img/boot.png"><img src="img/boot.png" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sneakers/1.jpg"><img src="img/sneakers/1.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sneakers/2.jpg"><img src="img/sneakers/2.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sneakers/3.jpg"><img src="img/sneakers/3.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sneakers/4.jpg"><img src="img/sneakers/4.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sneakers/5.jpg"><img src="img/sneakers/5.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sneakers/6.jpg"><img src="img/sneakers/6.jpg" alt=""></a>
                         </div>
                         <p><a name="7"></a></p>
                         <div class="product-card__features">
@@ -180,6 +188,124 @@
                                 <div class="features-item"><div class="name">Страна: </div><div class="value"> Словакия</div></div>
                                 <div class="features-item"><div class="name">Стиль: </div><div class="value">Ежедневный (casual)</div></div>
                                 <div class="features-item"><div class="name">Цвет:</div><div class="value"> Чёрный</div></div>
+                            </div>
+                            <form class="order-form" name="form1" action="result.php?<?php echo http_build_query($_GET); ?>" method="POST">
+                                <div class="price-box">
+                                    <span class="old-price"><?= $price_old?> <?= $currency?></span>
+                                    <div class="new-price"><?= $landing_price?> <?= $currency?></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" id="name_first" placeholder="Имя" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Телефон" required>
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select form-control" name="" id="">
+                                        <option value="0">Выбирете размер</option>
+                                        <option value="36">36р (24 см)</option>
+                                        <option value="37">37р (25 см)</option>
+                                        <option value="38">38р (25.5 см)</option>
+                                        <option value="39">39р (26 см)</option>
+                                        <option value="40">40р (26.5 см)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group button-wrapper">
+                                    <button class="order-link order-button" type="submit" name="submit">заказать</button>
+                                </div>
+                                <input name="add_params[id]" type="hidden" value="90">
+                                <input name="comments" type="hidden" value="">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <img class="flower-1" src="images/flower-1.png" alt=""><img class="flower-2" src="images/flower-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-cards" id="product-cards">
+            <div class="container">
+                <h2><span>ECCO flat</span></h2>
+                <div class="product-card product-card-1 check-sale">
+                    <div class="product-card-wrapper">
+                        <h3>Женские шлепанцы <br> ecco flat</h3>
+                        <div class="product-card__gallery js-anim-section" data-speed="80">
+                            <a class="js-anim-scroll" href="img/sandals-black/1.jpg"><img src="img/sandals-black/1.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sandals-black/2.jpg"><img src="img/sandals-black/2.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sandals-black/3.jpg"><img src="img/sandals-black/3.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sandals-black/4.jpg"><img src="img/sandals-black/4.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sandals-black/5.jpg"><img src="img/sandals-black/5.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sandals-black/6.jpg"><img src="img/sandals-black/6.jpg" alt=""></a>
+                        </div>
+                        <p><a name="7"></a></p>
+                        <div class="product-card__features">
+                            <div class="items">
+                                <div class="features-item"><div class="name">Сезон:</div><div class="value">Весна - лето </div></div>
+                                <div class="features-item"><div class="name">Верх: </div><div class="value">Натуральная кожа</div></div>
+                                <div class="features-item"><div class="name">Подошва: </div><div class="value">Полиуретан</div></div>
+                                <div class="features-item"><div class="name">Страна: </div><div class="value"> Словакия</div></div>
+                                <div class="features-item"><div class="name">Стиль: </div><div class="value">Ежедневный (casual)</div></div>
+                                <div class="features-item"><div class="name">Цвет:</div><div class="value"> Чёрный</div></div>
+                            </div>
+                            <form class="order-form" name="form1" action="result.php?<?php echo http_build_query($_GET); ?>" method="POST">
+                                <div class="price-box">
+                                    <span class="old-price"><?= $price_old?> <?= $currency?></span>
+                                    <div class="new-price"><?= $landing_price?> <?= $currency?></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" id="name_first" placeholder="Имя" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Телефон" required>
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select form-control" name="" id="">
+                                        <option value="0">Выбирете размер</option>
+                                        <option value="36">36р (24 см)</option>
+                                        <option value="37">37р (25 см)</option>
+                                        <option value="38">38р (25.5 см)</option>
+                                        <option value="39">39р (26 см)</option>
+                                        <option value="40">40р (26.5 см)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group button-wrapper">
+                                    <button class="order-link order-button" type="submit" name="submit">заказать</button>
+                                </div>
+                                <input name="add_params[id]" type="hidden" value="90">
+                                <input name="comments" type="hidden" value="">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <img class="flower-1" src="images/flower-1.png" alt=""><img class="flower-2" src="images/flower-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-cards" id="product-cards">
+            <div class="container">
+                <h2><span>ECCO flat</span></h2>
+                <div class="product-card product-card-1 check-sale">
+                    <div class="product-card-wrapper">
+                        <h3>Женские шлепанцы <br> ecco flat</h3>
+                        <div class="product-card__gallery js-anim-section" data-speed="80">
+                            <a class="js-anim-scroll" href="img/sandals-white/1.jpg"><img src="img/sandals-white/1.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sandals-white/2.jpg"><img src="img/sandals-white/2.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sandals-white/3.jpg"><img src="img/sandals-white/3.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sandals-white/4.jpg"><img src="img/sandals-white/4.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sandals-white/5.jpg"><img src="img/sandals-white/5.jpg" alt=""></a>
+                            <a class="js-anim-scroll" href="img/sandals-white/6.jpg"><img src="img/sandals-white/6.jpg" alt=""></a>
+                        </div>
+                        <p><a name="7"></a></p>
+                        <div class="product-card__features">
+                            <div class="items">
+                                <div class="features-item"><div class="name">Сезон:</div><div class="value">Весна - лето </div></div>
+                                <div class="features-item"><div class="name">Верх: </div><div class="value">Натуральная кожа</div></div>
+                                <div class="features-item"><div class="name">Подошва: </div><div class="value">Полиуретан</div></div>
+                                <div class="features-item"><div class="name">Страна: </div><div class="value"> Словакия</div></div>
+                                <div class="features-item"><div class="name">Стиль: </div><div class="value">Ежедневный (casual)</div></div>
+                                <div class="features-item"><div class="name">Цвет:</div><div class="value"> Белый</div></div>
                             </div>
                             <form class="order-form" name="form1" action="result.php?<?php echo http_build_query($_GET); ?>" method="POST">
                                 <div class="price-box">
@@ -331,6 +457,16 @@
                 <div class="back footer-back">
                     <img class="footer-boots" src="img/boot.png" alt=""><img class="footer-photo"
                         src="img/bootswqw.png" alt="">
+                </div>
+                <div class="footer-copy">
+                    <div style="font-size:24px;text-align: center;">
+                        <a style="color:inherit;" href="policy.php">Политика конфиденциальности</a>
+                        <br>
+                        <a style="color:inherit;" href="agreement.php">
+                            Пользовательское соглашение</a>
+                        <br>
+                        <a style="color:inherit;" href="warranty.php">Условия гарантии и возврата</a>
+                    </div>
                 </div>
         </footer>
     </div>
